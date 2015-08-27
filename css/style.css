@@ -35,7 +35,7 @@
     }
 
       .title-logo {
-         width: 170px;
+         width: 160px;
       }
 
       .title-super{
@@ -59,11 +59,28 @@
 
 
 .title-header{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .title-logo{
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+
+
+#feature-div{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 5px ;
+  margin-bottom: 3px;
+  padding: 5px 8px;
+}
+
+/* Add Effect on featured items */
+#feature-div:hover{
+  border: 1px solid #cccccc;
+  border-radius: 5px ;
+  margin-bottom: 3px;
+  box-shadow: 0px 0px 10px #888888;
 }
 
 div.col-md-4 img {
