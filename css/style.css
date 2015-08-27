@@ -1,18 +1,53 @@
 *{
-  font-family: 'Lato', sans-serif; /* Goofle Fonts APIs*/
+  font-family: 'Lato', sans-serif; /* Google Fonts APIs*/
   color: #676858;
   font-weight: 300;
 }
 
-@media only screen and (max-width:500px) and (orientation: landscape){
+/* Center Header Logo and Title when  <= 767px*/
+@media only screen and (max-width:767px){
 
-  .logo {
+  .title-logo {
      display:block;
      margin:auto;
+     width: 30vw;
+     min-width: 175px;
   }
 
+  .title-super{
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .title-discription{
+    font-size: 5vw;
+    text-align: center;
+  }
 }
 
+/***
+  - set container amx-width to 750px ()
+  - set a fixed size to header image and text
+*/
+@media only screen and (min-width:768px){
+    .container {
+      max-width: 750px;
+    }
+
+      .title-logo {
+         width: 170px;
+      }
+
+      .title-super{
+        font-size: 60px;
+        text-align: right;
+      }
+
+      .title-discription{
+        font-size: 20px;
+        text-align: right;
+      }
+}
 
 .text-muted{
   color: #BCBBBB;
@@ -22,8 +57,9 @@
   font-weight:500;
 }
 
-.title-super{
-  font-size: 60px;
+
+.title-header{
+  margin-top: 20px;
 }
 
 .title-logo{
