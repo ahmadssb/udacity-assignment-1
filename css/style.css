@@ -35,12 +35,13 @@ div.col-md-4 img {
    margin:auto;
 }
 
-
+/*
 .row{
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
 }
+*/
 
 .col-1{
   width: 8.33%;
