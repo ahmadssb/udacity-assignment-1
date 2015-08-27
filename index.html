@@ -1,21 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <!-- /bootstrap -->
+  <title>kittens</title>
 
-  <!-- jquery -->
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <!-- /jquery -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap along with enabling modal-dialogs -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!--First Jquery--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--Second bootstrap--> <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- ./bootstrap along with enabling modal-dialogs -->
+
+  <!-- Lato Font from Google APIs -->
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <!-- ./Lato Font from Google APIs -->
 
   <script src="js/js.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+
+    <div class="container"> <!-- container -->
+      <div class="row"> <!-- row -->
+        <div class="col-md-6 col-md-12"> <!-- col-md-6 col-md-12 -->
+              <img src="http://placekitten.com/150/110" alt="Logo" class="img-responsive title-logo img-circle ">
+        </div> <!-- ./col-md-6 col-md-12 -->
+        <div class="col-md-6 text-uppercase text-right"> <!-- col-md-6 -->
+            <h1 class="title-super">Kittens</h1>
+            <h2>front-end responsive design</h2>
+        </div> <!-- ./col-md-6 -->
+      </div> <!-- ./row -->
+      <div class="row"> <!-- row -->
+        <div class="col-md-6"> <!-- col-md-6 -->
+          <hr>
+        </div> <!-- ./col-md-6 -->
+      </div> <!-- ./row -->
+      <div class="row"> <!-- row -->
+        <div class="col-md-12 text-center"> <!-- col-md-12 -->
+          <img src="http://placekitten.com/1170/352" alt="Cat" class="img-responsive text-center"/>
+        </div> <!-- ./col-md-12 -->
+      </div> <!-- ./row -->
+      <div class="row"> <!-- row -->
+        <div class="col-md-12 text-uppercase"> <!-- col-md-12 -->
+          <h3 class="text-mute">Feature Work</h3>
+        </div> <!-- ./col-md-12 -->
+      </div> <!-- ./row -->
+      <div class="row text-center"> <!-- row -->
+        <div class="col-md-4"> <!-- col-md-4 -->
+          <img src="http://placekitten.com/752/300" alt="catf" class="img-responsive"
+          data-toggle="modal" data-target="#cat1" />
+          <h3 class="text-uppercase">Appify</h3>
+          <p>http://ahmadssb.com</p>
+        </div> <!-- ./col-md-4 -->
+          <div class="col-md-4"> <!-- col-md-4 -->
+            <img src="http://placekitten.com/751/300" alt="catf" class="img-responsive"
+           data-toggle="modal" data-target="#cat2" />
+            <h3 class="text-uppercase">Appify</h3>
+            <p>http://ahmadssb.com</p>
+          </div> <!-- ./col-md-4 -->
+            <div class="col-md-4"> <!-- col-md-4 -->
+              <img src="http://placekitten.com/755/300" alt="catf" class="img-responsive"
+              data-toggle="modal" data-target="#cat3"
+              />
+              <h3 class="text-uppercase">Appify</h3>
+              <p>http://ahmadssb.com</p>
+            </div> <!-- col-md-4 -->
+      </div> <!-- ./row -->
+
+      <!-- bootstrap modal-dialogs for each cat -->
+      <!-- cat1 Modal -->
+          <div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">First Cat</h4>
+                </div>
+                <div class="modal-body">
+                  this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1,
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>  <!-- ./ cat1 modal  -->
+
+      <!-- cat2 Modal -->
+          <div class="modal fade" id="cat2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Second Cat</h4>
+                </div>
+                <div class="modal-body">
+                  this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> <!-- ./ cat2 modal  -->
+
+      <!-- cat3 Modal -->
+          <div class="modal fade" id="cat3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Third Cat</h4>
+                </div>
+                <div class="modal-body">
+                  this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> <!-- ./ cat3 modal  -->
+      <!-- ./bootstrap modal-dialogs for each cat -->
+  </div> <!-- ./container -->
 </body>
 </html>
