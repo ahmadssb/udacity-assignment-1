@@ -6,7 +6,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+   <!-- 
+      Momen:
+       It will be better to unify your indentation
+       and comment style in the whole document
+   -->
+   
+   <!--
+       Momen:
+       Usually using comments is a way to declare un-clear
+       points.
+       Do you think it will be better to just add a comment
+       for the whole stylesheets?
+   -->
     <!-- bootstrap along with enabling modal-dialogs -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <!--First Jquery--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -17,6 +29,12 @@
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <!-- ./Lato Font from Google APIs -->
 
+    <!--
+        Momen:
+        Collecting CSS files and JS files together will be
+        more efficient.
+        + Adding an empty js file; Do you think it's a good idea :D?
+    -->
   <script src="js/js.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -25,6 +43,13 @@
     <div class="container"> <!-- container -->
       <div class="row"> <!-- row -->
         <div class="col-sm-6"> <!-- col-sm-6 col-sm-12 -->
+             <!--
+                 Momen:
+                 placekitten.com is good way for testing; But for
+                 production you will need to use your own images
+                 Also it will be a good way to apply what you have
+                 learn in Responsive images course.
+             -->
               <img src="http://placekitten.com/270/240" alt="Logo" class="img-responsive title-logo img-circle ">
         </div> <!-- ./col-sm-6 col-sm-12 -->
         <div class="col-sm-6 title-header text-uppercase text-right"> <!-- col-sm-6 -->
@@ -32,11 +57,26 @@
             <h2 class="title-discription">front-end responsive design</h2>
         </div> <!-- ./col-sm-6 -->
       </div> <!-- ./row -->
+      
+      <!--
+          Momen:
+          Do you think putting an hr element in such a formatted
+          Is markup a good idea?
+      -->
       <div class="row"> <!-- row -->
         <div class="col-sm-6"> <!-- col-sm-6 -->
           <hr>
         </div> <!-- ./col-sm-6 -->
       </div> <!-- ./row -->
+      
+      <!--
+          Momen:
+          For sectoring your markup; I think you have to give this video
+          https://www.udacity.com/course/viewer#!/c-ud304-nd/l-2617868617/e-2811608545/m-2810478547
+          extra look
+          This link will help too:
+          https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning
+      -->
       <div class="row"> <!-- row -->
         <div class="col-sm-12 text-center"> <!-- col-sm-12 -->
           <img src="http://placekitten.com/1170/340" alt="Cat" class="img-responsive text-center"/>
@@ -47,10 +87,23 @@
           <h3 class="text-mute">Feature Work</h3>
         </div> <!-- ./col-sm-12 -->
       </div> <!-- ./row -->
+      
+      <!--
+          Momen:
+          All your cats have the same ID 'feature-div' which is
+          not a good approach; i.e: You can duplicate IDs in the
+          same page. (Same for 'myModalLabel')
+      -->
       <div class="row text-center"> <!-- row -->
         <div class="col-sm-4" id="feature-div"  data-toggle="modal" data-target="#cat1" > <!-- col-sm-4 -->
           <img src="http://placekitten.com/752/300" alt="Cat Picture" class="img-responsive"/>
           <h3 class="text-uppercase">Cat 1</h3>
+          
+          <!--
+              Momen:
+              For markup wise your links supposed to be surrounded with
+              a link tag not a paragraph
+          -->
           <p>http://ahmadssb.com</p>
         </div> <!-- ./col-sm-4 -->
           <div class="col-sm-4" id="feature-div" data-toggle="modal" data-target="#cat2"> <!-- col-sm-4 -->
@@ -64,7 +117,13 @@
               <p>http://ahmadssb.com</p>
             </div> <!-- col-sm-4 -->
       </div> <!-- ./row -->
-
+      
+      
+      <!--
+          Momen:
+          Will it be easy for you to change something in a cat model
+          or it will be better to put every modal beside it's cat :D?
+      -->
       <!-- bootstrap modal-dialogs for each cat -->
       <!-- cat1 Modal -->
           <div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

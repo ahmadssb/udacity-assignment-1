@@ -1,9 +1,18 @@
 *{
+    /*
+        Momen:
+        Please Check Udacity guidelines for CSS Quotation Marks
+        https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf
+    */
   font-family: 'Lato', sans-serif; /* Google Fonts APIs*/
   color: #676858;
   font-weight: 300;
 }
 
+/*
+    Momen:
+    You don't have to explain what a CSS rule do. (Line 32 too)
+*/
 /* Center Header Logo and Title when  <= 767px*/
 @media only screen and (max-width:767px){
 
@@ -77,6 +86,11 @@
 
 /* Add Effect on featured items */
 #feature-div:hover{
+    /*
+        Momen:
+        Please Check Udacity guidelines for CSS colors value
+        https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf
+    */
   border: 1px solid #cccccc;
   border-radius: 5px ;
   margin-bottom: 3px;
@@ -87,7 +101,11 @@ div.col-md-4 img {
    display:block;
    margin:auto;
 }
-
+/*
+    Momen:
+    For production code it will be better
+    to remove your comments before deploy.
+*/
 /*
 .row{
   width: 100%;
@@ -99,7 +117,10 @@ div.col-md-4 img {
 .col-1{
   width: 8.33%;
 }
-
+/*
+    Momen:
+    I think you miss something here :)
+*/
 .col-2{
   width: 16.66
 }
