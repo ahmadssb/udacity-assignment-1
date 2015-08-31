@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
 <head>
   <title>kittens</title>
 
@@ -19,29 +19,18 @@
        Do you think it will be better to just add a comment
        for the whole stylesheets?
    -->
-    <!-- bootstrap along with enabling modal-dialogs -->
+   
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!--First Jquery--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!--Second bootstrap--> <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <!-- ./bootstrap along with enabling modal-dialogs -->
-
-  <!-- Lato Font from Google APIs -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <!-- ./Lato Font from Google APIs -->
-
-    <!--
-        Momen:
-        Collecting CSS files and JS files together will be
-        more efficient.
-        + Adding an empty js file; Do you think it's a good idea :D?
-    -->
-  <script src="js/js.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
     <div class="container"> <!-- container -->
-      <div class="row"> <!-- row -->
+      <div class="row "> <!-- row -->
+        
         <div class="col-sm-6"> <!-- col-sm-6 col-sm-12 -->
              <!--
                  Momen:
@@ -50,7 +39,7 @@
                  Also it will be a good way to apply what you have
                  learn in Responsive images course.
              -->
-              <img src="http://placekitten.com/270/240" alt="Logo" class="img-responsive title-logo img-circle ">
+              <img src="http://placekitten.com/272/240" alt="Logo" class="img-responsive title-logo img-circle ">
         </div> <!-- ./col-sm-6 col-sm-12 -->
         <div class="col-sm-6 title-header text-uppercase text-right"> <!-- col-sm-6 -->
             <h1 class="title-super">Kittens</h1>
@@ -64,8 +53,8 @@
           Is markup a good idea?
       -->
       <div class="row"> <!-- row -->
-        <div class="col-sm-12"> <!-- col-sm-12 -->
-          <hr>
+        <div class="col-sm-12 header-line"> <!-- col-sm-12 -->
+         
         </div> <!-- ./col-sm-12 -->
       </div> <!-- ./row -->
       
@@ -94,9 +83,10 @@
           not a good approach; i.e: You can duplicate IDs in the
           same page. (Same for 'myModalLabel')
       -->
+      
       <div class="row text-center"> <!-- row -->
-        <div class="col-sm-4" id="feature-div"  data-toggle="modal" data-target="#cat1" > <!-- col-sm-4 -->
-          <img src="http://placekitten.com/752/300" alt="Cat Picture" class="img-responsive"/>
+        <div class="col-sm-4 feature-div-shadow" id="feature-cat-1" > <!-- col-sm-4 -->
+          <img src="http://placekitten.com/752/300" alt="Cat Picture" class="img-responsive"   data-toggle="modal" data-target="#cat1" />
           <h3 class="text-uppercase">Cat 1</h3>
           
           <!--
@@ -104,20 +94,9 @@
               For markup wise your links supposed to be surrounded with
               a link tag not a paragraph
           -->
-          <p>http://ahmadssb.com</p>
+          <p><a href="#">http://ahmadssb.com</a></p>
         </div> <!-- ./col-sm-4 -->
-          <div class="col-sm-4" id="feature-div" data-toggle="modal" data-target="#cat2"> <!-- col-sm-4 -->
-            <img src="http://placekitten.com/751/300" alt="Cat Picture" class="img-responsive"/>
-            <h3 class="text-uppercase">Cat 2</h3>
-            <p>http://ahmadssb.com</p>
-          </div> <!-- ./col-sm-4 -->
-            <div class="col-sm-4" id="feature-div" data-toggle="modal" data-target="#cat3"> <!-- col-sm-4 -->
-              <img src="http://placekitten.com/755/300" alt="Cat Picture" class="img-responsive" />
-              <h3 class="text-uppercase">Cat 3</h3>
-              <p>http://ahmadssb.com</p>
-            </div> <!-- col-sm-4 -->
-      </div> <!-- ./row -->
-      
+        
       
       <!--
           Momen:
@@ -126,12 +105,12 @@
       -->
       <!-- bootstrap modal-dialogs for each cat -->
       <!-- cat1 Modal -->
-          <div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="cat1ModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">First Cat</h4>
+                  <h4 class="modal-title" id="cat1ModalLabel">First Cat</h4>
                 </div>
                 <div class="modal-body">
                   this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1,
@@ -143,13 +122,20 @@
             </div>
           </div>  <!-- ./ cat1 modal  -->
 
+          <div class="col-sm-4 feature-div-shadow" id="feature-cat-2"> <!-- col-sm-4 -->
+            <img src="http://placekitten.com/751/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat2"/>
+            <h3 class="text-uppercase">Cat 2</h3>
+            <p><a href="#">http://ahmadssb.com</a></p>
+          </div> <!-- ./col-sm-4 -->
+          
+      
       <!-- cat2 Modal -->
-          <div class="modal fade" id="cat2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal fade" id="cat2" tabindex="-1" role="dialog" aria-labelledby="cat2ModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Second Cat</h4>
+                  <h4 class="modal-title" id="cat2ModalLabel">Second Cat</h4>
                 </div>
                 <div class="modal-body">
                   this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2.
@@ -161,13 +147,19 @@
             </div>
           </div> <!-- ./ cat2 modal  -->
 
+            <div class="col-sm-4 feature-div-shadow" id="feature-cat-3" > <!-- col-sm-4 -->
+              <img src="http://placekitten.com/755/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat3"/>
+              <h3 class="text-uppercase">Cat 3</h3>
+              <p><a href="#">http://ahmadssb.com</a></p>
+            </div> <!-- col-sm-4 -->
+            
       <!-- cat3 Modal -->
-          <div class="modal fade" id="cat3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal fade" id="cat3" tabindex="-1" role="dialog" aria-labelledby="cat3ModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Third Cat</h4>
+                  <h4 class="modal-title" id="cat3ModalLabel">Third Cat</h4>
                 </div>
                 <div class="modal-body">
                   this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3.
@@ -178,6 +170,7 @@
               </div>
             </div>
           </div> <!-- ./ cat3 modal  -->
+      </div> <!-- ./row -->
       <!-- ./bootstrap modal-dialogs for each cat -->
   </div> <!-- ./container -->
 </body>

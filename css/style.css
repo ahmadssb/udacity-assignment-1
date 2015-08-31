@@ -1,10 +1,10 @@
-*{
+* {
     /*
         Momen:
         Please Check Udacity guidelines for CSS Quotation Marks
         https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf
     */
-  font-family: 'Lato', sans-serif; /* Google Fonts APIs*/
+  font-family: "Lato", sans-serif; /* Google Fonts APIs*/
   color: #676858;
   font-weight: 300;
 }
@@ -13,8 +13,12 @@
     Momen:
     You don't have to explain what a CSS rule do. (Line 32 too)
 */
-/* Center Header Logo and Title when  <= 767px*/
-@media only screen and (max-width:767px){
+
+    /*
+      Ahmed:
+        edited.
+    */
+@media only screen and (max-width:767px) {
 
   .title-logo {
      display:block;
@@ -23,78 +27,81 @@
      min-width: 175px;
   }
 
-  .title-super{
+  .title-super {
     font-size: 10vw;
     text-align: center;
   }
 
-  .title-discription{
+  .title-discription {
     font-size: 5vw;
     text-align: center;
   }
 }
 
-/***
-  - set container amx-width to 750px ()
-  - set a fixed size to header image and text
-*/
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
     .container {
-      max-width: 750px;
+      max-width: 760px;
     }
 
       .title-logo {
-         width: 160px;
+       width: 160px;
       }
 
-      .title-super{
+      .title-super {
         font-size: 60px;
         text-align: right;
       }
 
-      .title-discription{
+      .title-discription {
         font-size: 20px;
         text-align: right;
       }
 }
 
-.text-muted{
+.text-muted {
   color: #BCBBBB;
 }
 
-.text-thin{
+.text-thin {
   font-weight:500;
 }
 
 
-.title-header{
+.title-header {
   margin-top: 10px;
 }
 
-.title-logo{
+.title-logo {
   margin-top: 10px;
 }
 
+.header-line {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
 
-
-#feature-div{
+.feature-div-shadow {
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 5px ;
-  margin-bottom: 3px;
-  padding: 5px 8px;
+
+  padding: 5px 2px;
 }
 
-/* Add Effect on featured items */
-#feature-div:hover{
+
+.feature-div-shadow:hover {
     /*
         Momen:
         Please Check Udacity guidelines for CSS colors value
         https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf
     */
-  border: 1px solid #cccccc;
+    /*
+      Ahmed:
+        edited.
+    */
+  border: 1px solid #ccc;
   border-radius: 5px ;
-  margin-bottom: 3px;
-  box-shadow: 0px 0px 10px #888888;
+
+  box-shadow: 0px 0px 10px #888;
 }
 
 div.col-md-4 img {
@@ -106,62 +113,9 @@ div.col-md-4 img {
     For production code it will be better
     to remove your comments before deploy.
 */
+
 /*
-.row{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap-reverse;
-}
+  Ahmed:
+  Removed.. I am using bootstrab.
 */
 
-.col-1{
-  width: 8.33%;
-}
-/*
-    Momen:
-    I think you miss something here :)
-*/
-.col-2{
-  width: 16.66
-}
-
-.col-3{
-  width: 8.33%;
-}
-
-.col-4{
-  width: 33.33%;
-}
-
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
