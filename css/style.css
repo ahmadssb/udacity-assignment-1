@@ -20,7 +20,7 @@
     */
 @media only screen and (max-width:767px) {
 
-  .title-logo {
+  .title-logo { 
      display:block;
      margin:auto;
      width: 30vw;
@@ -44,7 +44,7 @@
     }
 
       .title-logo {
-       width: 160px;
+       width: 145px;
       }
 
       .title-super {
@@ -56,6 +56,13 @@
         font-size: 20px;
         text-align: right;
       }
+      
+.logo-border-bottom {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  
+}
 }
 
 .text-muted {
@@ -75,9 +82,12 @@
   margin-top: 10px;
 }
 
-.header-line {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+
+.title-border-bottom {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  
 }
 
 .feature-div-shadow {

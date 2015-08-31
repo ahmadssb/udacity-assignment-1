@@ -1,64 +1,77 @@
 <html>
 <!DOCTYPE html>
+
 <head>
   <title>kittens</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- 
+  <!-- 
       Momen:
        It will be better to unify your indentation
        and comment style in the whole document
    -->
-   
-   <!--
+
+  <!--
        Momen:
        Usually using comments is a way to declare un-clear
        points.
        Do you think it will be better to just add a comment
        for the whole stylesheets?
    -->
-   
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-    <div class="container"> <!-- container -->
-      <div class="row "> <!-- row -->
-        
-        <div class="col-sm-6"> <!-- col-sm-6 col-sm-12 -->
-             <!--
+  <div class="container">
+    <!-- container -->
+    <div class="row ">
+      <!-- row -->
+      <!--
+        Ahmed: 
+        I have added a bottom-border-line for both logo and title  
+      -->
+      <div class="col-sm-6 logo-border-bottom">
+        <!-- col-sm-6 col-sm-12 -->
+        <!--
                  Momen:
                  placekitten.com is good way for testing; But for
                  production you will need to use your own images
                  Also it will be a good way to apply what you have
                  learn in Responsive images course.
              -->
-              <img src="http://placekitten.com/272/240" alt="Logo" class="img-responsive title-logo img-circle ">
-        </div> <!-- ./col-sm-6 col-sm-12 -->
-        <div class="col-sm-6 title-header text-uppercase text-right"> <!-- col-sm-6 -->
-            <h1 class="title-super">Kittens</h1>
-            <h2 class="title-discription">front-end responsive design</h2>
-        </div> <!-- ./col-sm-6 -->
-      </div> <!-- ./row -->
-      
-      <!--
+        <img src="http://placekitten.com/272/240" alt="Logo" class="img-responsive title-logo img-circle ">
+      </div>
+      <!-- ./col-sm-6 col-sm-12 -->
+      <div class="col-sm-6 title-border-bottom text-uppercase text-right">
+        <!-- col-sm-6 -->
+        <h1 class="title-super">Kittens</h1>
+        <h2 class="title-discription">front-end responsive design</h2>
+      </div>
+      <!-- ./col-sm-6 -->
+
+
+    </div>
+    <!-- ./row -->
+
+    <!--
           Momen:
           Do you think putting an hr element in such a formatted
           Is markup a good idea?
       -->
-      <div class="row"> <!-- row -->
-        <div class="col-sm-12 header-line"> <!-- col-sm-12 -->
-         
-        </div> <!-- ./col-sm-12 -->
-      </div> <!-- ./row -->
-      
-      <!--
+    <!--
+        Ahmed:
+        Check Line 39
+      -->
+
+    <!--
           Momen:
           For sectoring your markup; I think you have to give this video
           https://www.udacity.com/course/viewer#!/c-ud304-nd/l-2617868617/e-2811608545/m-2810478547
@@ -66,38 +79,50 @@
           This link will help too:
           https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning
       -->
-      <div class="row"> <!-- row -->
-        <div class="col-sm-12 text-center"> <!-- col-sm-12 -->
-          <img src="http://placekitten.com/1170/340" alt="Cat" class="img-responsive text-center"/>
-        </div> <!-- ./col-sm-12 -->
-      </div> <!-- ./row -->
-      <div class="row"> <!-- row -->
-        <div class="col-sm-12 text-uppercase"> <!-- col-sm-12 -->
-          <h3 class="text-mute">Feature Work</h3>
-        </div> <!-- ./col-sm-12 -->
-      </div> <!-- ./row -->
-      
-      <!--
+    <div class="row">
+      <!-- row -->
+      <div class="col-sm-12 text-center">
+        <!-- col-sm-12 -->
+        <img src="http://placekitten.com/1170/340" alt="Cat" class="img-responsive text-center" />
+      </div>
+      <!-- ./col-sm-12 -->
+    </div>
+    <!-- ./row -->
+    <div class="row">
+      <!-- row -->
+      <div class="col-sm-12 text-uppercase">
+        <!-- col-sm-12 -->
+        <h3 class="text-mute">Feature Work</h3>
+      </div>
+      <!-- ./col-sm-12 -->
+    </div>
+    <!-- ./row -->
+
+    <!--
           Momen:
           All your cats have the same ID 'feature-div' which is
           not a good approach; i.e: You can duplicate IDs in the
           same page. (Same for 'myModalLabel')
       -->
-      
-      <div class="row text-center"> <!-- row -->
-        <div class="col-sm-4 feature-div-shadow" id="feature-cat-1" > <!-- col-sm-4 -->
-          <img src="http://placekitten.com/752/300" alt="Cat Picture" class="img-responsive"   data-toggle="modal" data-target="#cat1" />
-          <h3 class="text-uppercase">Cat 1</h3>
-          
-          <!--
+
+    <div class="row text-center">
+      <!-- row -->
+      <div class="col-sm-4 feature-div-shadow" id="feature-cat-1">
+        <!-- col-sm-4 -->
+        <img src="http://placekitten.com/752/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat1"
+        />
+        <h3 class="text-uppercase">Cat 1</h3>
+
+        <!--
               Momen:
               For markup wise your links supposed to be surrounded with
               a link tag not a paragraph
           -->
-          <p><a href="#">http://ahmadssb.com</a></p>
-        </div> <!-- ./col-sm-4 -->
-        
-      
+        <p><a href="#">http://ahmadssb.com</a></p>
+      </div>
+      <!-- ./col-sm-4 -->
+
+
       <!--
           Momen:
           Will it be easy for you to change something in a cat model
@@ -105,73 +130,88 @@
       -->
       <!-- bootstrap modal-dialogs for each cat -->
       <!-- cat1 Modal -->
-          <div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="cat1ModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="cat1ModalLabel">First Cat</h4>
-                </div>
-                <div class="modal-body">
-                  this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1,
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+      <div class="modal fade" id="cat1" tabindex="-1" role="dialog" aria-labelledby="cat1ModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="cat1ModalLabel">First Cat</h4>
             </div>
-          </div>  <!-- ./ cat1 modal  -->
+            <div class="modal-body">
+              this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1, this is info about cat1,
+              this is info about cat1, this is info about cat1,
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./ cat1 modal  -->
 
-          <div class="col-sm-4 feature-div-shadow" id="feature-cat-2"> <!-- col-sm-4 -->
-            <img src="http://placekitten.com/751/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat2"/>
-            <h3 class="text-uppercase">Cat 2</h3>
-            <p><a href="#">http://ahmadssb.com</a></p>
-          </div> <!-- ./col-sm-4 -->
-          
-      
+      <div class="col-sm-4 feature-div-shadow" id="feature-cat-2">
+        <!-- col-sm-4 -->
+        <img src="http://placekitten.com/751/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat2"
+        />
+        <h3 class="text-uppercase">Cat 2</h3>
+        <p><a href="#">http://ahmadssb.com</a></p>
+      </div>
+      <!-- ./col-sm-4 -->
+
+
       <!-- cat2 Modal -->
-          <div class="modal fade" id="cat2" tabindex="-1" role="dialog" aria-labelledby="cat2ModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="cat2ModalLabel">Second Cat</h4>
-                </div>
-                <div class="modal-body">
-                  this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+      <div class="modal fade" id="cat2" tabindex="-1" role="dialog" aria-labelledby="cat2ModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="cat2ModalLabel">Second Cat</h4>
             </div>
-          </div> <!-- ./ cat2 modal  -->
+            <div class="modal-body">
+              this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2, this is info about cat2,
+              this is info about cat2, this is info about cat2.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./ cat2 modal  -->
 
-            <div class="col-sm-4 feature-div-shadow" id="feature-cat-3" > <!-- col-sm-4 -->
-              <img src="http://placekitten.com/755/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat3"/>
-              <h3 class="text-uppercase">Cat 3</h3>
-              <p><a href="#">http://ahmadssb.com</a></p>
-            </div> <!-- col-sm-4 -->
-            
+      <div class="col-sm-4 feature-div-shadow" id="feature-cat-3">
+        <!-- col-sm-4 -->
+        <img src="http://placekitten.com/755/300" alt="Cat Picture" class="img-responsive" data-toggle="modal" data-target="#cat3"
+        />
+        <h3 class="text-uppercase">Cat 3</h3>
+        <p><a href="#">http://ahmadssb.com</a></p>
+      </div>
+      <!-- col-sm-4 -->
+
       <!-- cat3 Modal -->
-          <div class="modal fade" id="cat3" tabindex="-1" role="dialog" aria-labelledby="cat3ModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="cat3ModalLabel">Third Cat</h4>
-                </div>
-                <div class="modal-body">
-                  this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+      <div class="modal fade" id="cat3" tabindex="-1" role="dialog" aria-labelledby="cat3ModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="cat3ModalLabel">Third Cat</h4>
             </div>
-          </div> <!-- ./ cat3 modal  -->
-      </div> <!-- ./row -->
-      <!-- ./bootstrap modal-dialogs for each cat -->
-  </div> <!-- ./container -->
+            <div class="modal-body">
+              this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3, this is info about cat3,
+              this is info about cat3.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./ cat3 modal  -->
+    </div>
+    <!-- ./row -->
+    <!-- ./bootstrap modal-dialogs for each cat -->
+  </div>
+  <!-- ./container -->
 </body>
+
 </html>
