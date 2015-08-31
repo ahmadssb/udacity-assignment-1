@@ -36,6 +36,7 @@
     font-size: 5vw;
     text-align: center;
   }
+  
 }
 
 @media only screen and (min-width:768px) {
@@ -63,6 +64,7 @@
   margin-bottom: 20px;
   
 }
+
 }
 
 .text-muted {
@@ -90,6 +92,10 @@
   
 }
 
+  .main-banner{
+    min-height:  200px ;
+  }
+  
 .feature-div-shadow {
   border-bottom: 1px solid #eee;  
   border-radius: 5px ;
