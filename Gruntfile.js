@@ -8,22 +8,22 @@ module.exports = function(grunt) {
           engine: 'im',
           sizes: [{
             name: 'medium',
-            width: 250,
+            width: 750,
             suffix:'_med' ,
-            quality: 50
+            quality: 30
            
           }
           ,{
             name: 'large',
-            width: 250,
+            width: 750,
             suffix: '_large',
             quality: 50
           }
           ,{
             name: 'small',
-            width: 250,
+            width: 750,
             suffix: '_small',
-            quality: 30
+            quality: 20
           }
           ]
         },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['*.{gif,jpg,png,jpeg}'],
-          cwd: 'images/original-images/logo',
+          cwd: 'images/original-images/featured',
           dest: 'images/'
         }]
       }
