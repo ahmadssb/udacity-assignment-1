@@ -1,0 +1,22 @@
+{
+  "name": "udacity-assignment-1",
+  "version": "1.0.0",
+  "description": "GISTIC Udacity Assignment 1",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test_command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ahmadssb@bitbucket.org/GISTICTeam/udacity-assignment-1.git"
+  },
+  "keywords": [
+    "cat"
+  ],
+  "author": "Ahmed Babadr",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/GISTICTeam/udacity-assignment-1#readme",
+  "devDependencies": {
+    "grunt-responsive-images": "^0.1.6"
+  }
+}
