@@ -1,6 +1,5 @@
-<html>
 <!DOCTYPE html>
-
+<html>
 <head>
   <title>Foodie</title>
 
@@ -45,7 +44,7 @@
                  Also it will be a good way to apply what you have
                  learn in Responsive images course.
              -->
-        <img src="images/05-1024_large.jpg" alt="Logo" class="img-responsive title-logo img-circle ">
+        <img src="images/05-750_medium.jpg" alt="Logo" class="img-responsive title-logo img-circle ">
       </div>
       <div class="col-sm-6 title-border-bottom text-uppercase text-right">
         <h1 class="title-super">Foodie</h1>
@@ -76,7 +75,10 @@
       <article class="col-sm-12 text-center">
         <figure>
           <picture>
-        <img src="images/01-1024_large.jpg" alt="food" class="img-responsive text-center main-banner" />
+            <source media="(max-width:480px)" srcset="images/01-750_small.jpg"/>
+            <source media="(min-width:481px)" srcset="images/01-750_medium.jpg"/>
+            <source media="(min-width:768px)" srcset="images/01-1024_large.jpg"/>
+            <img src="images/01-1024_large.jpg" alt="food" class="img-responsive text-center main-banner" />
           </picture>
         </figure>
       </article>
@@ -103,6 +105,9 @@
       <article class="col-sm-4 feature-div-shadow" id="feature-food-1">
         <figure>
           <picture>
+            <source media="(max-width:480px)" srcset="images/02-750_small.jpg"/>
+            <source media="(min-width:481px)" srcset="images/02-750_medium.jpg"/>
+            <source media="(min-width:768px)" srcset="images/02-1024_large.jpg"/>
              <img src="images/02-1024_large.jpg" alt="food Picture" class="img-responsive featured-food" data-toggle="modal" data-target="#food1"/>
           </picture>
               <figcaption class="text-uppercase">food 1</figcaption>
@@ -144,7 +149,10 @@
       <article class="col-sm-4 feature-div-shadow" id="feature-food-2">
         <figure>
           <picture>
-        <img src="images/03-1024_large.jpg" alt="food Picture" class="img-responsive featured-food" data-toggle="modal" data-target="#food2" />
+            <source media="(max-width:480px)" srcset="images/03-750_small.jpg"/>
+            <source media="(min-width:481px)" srcset="images/03-750_medium.jpg"/>
+            <source media="(min-width:768px)" srcset="images/03-1024_large.jpg"/>
+            <img src="images/03-1024_large.jpg" alt="food Picture" class="img-responsive featured-food" data-toggle="modal" data-target="#food2" />
           </picture>
               <figcaption class="text-uppercase">food 2</figcaption>
         </figure>
@@ -174,10 +182,13 @@
       <!-- ./ food-2 -->
       
       <!-- food-3 -->
-      <article class="col-sm-4 feature-div-shadow" id="feature-food-3">
+      <article class="col-sm-4 feature-div-shadow " id="feature-food-3">
         <figure>
           <picture>
-        <img src="images/04-1024_large.jpg" alt="food Picture" class="img-responsive featured-food" data-toggle="modal" data-target="#food3"/>
+            <source media="(max-width:480px)" srcset="images/04-750_small.jpg"/>
+            <source media="(min-width:481px)" srcset="images/04-750_medium.jpg"/>
+            <source media="(min-width:768px)" srcset="images/04-1024_large.jpg"/>
+            <img src="images/04-1024_large.jpg" alt="food Picture" class="img-responsive featured-food" data-toggle="modal" data-target="#food3"/>
           </picture>
               <figcaption class="text-uppercase">food 3</figcaption>
         </figure>
