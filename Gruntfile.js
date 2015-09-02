@@ -6,24 +6,22 @@ module.exports = function(grunt) {
       dev: {
         options: {
           engine: 'im',
-          sizes: [{
-            name: 'medium',
+          sizes: [
+          {
+            width: 1024,
+            suffix: '_large',
+            quality: 90
+          }
+          ,{
             width: 750,
-            suffix:'_med' ,
-            quality: 30
+            suffix:'_medium' ,
+            quality: 70
            
           }
           ,{
-            name: 'large',
-            width: 750,
-            suffix: '_large',
-            quality: 50
-          }
-          ,{
-            name: 'small',
             width: 750,
             suffix: '_small',
-            quality: 20
+            quality: 50
           }
           ]
         },
@@ -35,7 +33,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['*.{gif,jpg,png,jpeg}'],
-          cwd: 'images/original-images/featured',
+          cwd: 'images/food-pics',
           dest: 'images/'
         }]
       }
