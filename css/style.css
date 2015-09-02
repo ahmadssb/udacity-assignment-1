@@ -45,7 +45,7 @@
     }
 
       .title-logo {
-       width: 145px;
+       width: 200px;
       }
 
       .title-super {
@@ -59,6 +59,7 @@
       }
       
 .logo-border-bottom {
+  height: 160px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
@@ -86,6 +87,7 @@
 
 
 .title-border-bottom {
+  height: 160px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
