@@ -2,7 +2,7 @@
     /*
         Momen:
         Please Check Udacity guidelines for CSS Quotation Marks
-        https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf
+        https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf (√)
     */
   font-family: "Lato", sans-serif; /* Google Fonts APIs*/
   color: #676858;
@@ -11,7 +11,7 @@
 
 /*
     Momen:
-    You don't have to explain what a CSS rule do. (Line 32 too)
+    You don't have to explain what a CSS rule do. (Line 32 too) (√)
 */
 
     /*
@@ -113,7 +113,7 @@
     /*
         Momen:
         Please Check Udacity guidelines for CSS colors value
-        https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf
+        https://storage.googleapis.com/supplemental_media/udacityu/nd001/HTML%20CSS%20Style%20Guide.pdf (√)
     */
     /*
       Ahmed:
@@ -131,7 +131,7 @@
 /*
     Momen:
     For production code it will be better
-    to remove your comments before deploy.
+    to remove your comments before deploy. (√)
 */
 
 /*
